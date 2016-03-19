@@ -1,0 +1,74 @@
+body {
+  width: 100%;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica;
+}
+
+.header-container{
+  padding-top:5px;
+}
+
+.div-left{
+  float: left;
+  padding-left: 5px;
+}
+
+.div-right{
+  float: right;
+  padding-right: 5px;
+}
+
+.caption {
+  font-size: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+#chart {
+  position: absolute;
+  top: 0;
+}
+
+rect {
+  fill: none;
+  pointer-events: all;
+}
+
+pre {
+  font-size: 18px;
+}
+
+line {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.string, .regexp {
+  color: #f39;
+}
+
+.keyword {
+  color: #00c;
+}
+
+.comment {
+  color: #777;
+  font-style: oblique;
+}
+
+.number {
+  color: #369;
+}
+
+.class, .special {
+  color: #1181B8;
+}
+
+a:link, a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #666;
+}
