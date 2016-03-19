@@ -175,7 +175,7 @@ sqlite3 ${DBFILE} '
     and language = "Puppet"
   order by file;' 2>/dev/null \
   | ${GENJSON} \
-  > ${WWW_DIR}/manifest_by_comment_${DATE}.json
+  > ${WWW_DIR}/${JSON}_${DATE}.json
 
 [ -L ${WWW_DIR}/${JSON}.json ] && rm -f ${WWW_DIR}/${JSON}.json
 ln -s ${WWW_DIR}/${JSON}_${DATE}.json ${WWW_DIR}/${JSON}.json
@@ -190,7 +190,7 @@ sqlite3 ${DBFILE} '
     and language = "ERB"
   order by file;' 2>/dev/null \
   | ${GENJSON} \
-  > ${WWW_DIR}/template_by_loc_${DATE}.json
+  > ${WWW_DIR}/${JSON}_${DATE}.json
 
 [ -L ${WWW_DIR}/${JSON}.json ] && rm -f ${WWW_DIR}/${JSON}.json
 ln -s ${WWW_DIR}/${JSON}_${DATE}.json ${WWW_DIR}/${JSON}.json
@@ -205,7 +205,7 @@ sqlite3 ${DBFILE} '
     and language in ("ERB", "Puppet")
   order by file;' 2>/dev/null \
   | ${GENJSON} \
-  > ${WWW_DIR}/manifest_templates_by_loc_${DATE}.json
+  > ${WWW_DIR}/${JSON}_${DATE}.json
 
 [ -L ${WWW_DIR}/${JSON}.json ] && rm -f ${WWW_DIR}/${JSON}.json
 ln -s ${WWW_DIR}/${JSON}_${DATE}.json ${WWW_DIR}/${JSON}.json

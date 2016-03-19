@@ -2,7 +2,7 @@
 
 ## Description
 
-Everybody loves metrics. These ones are for Puppet. So `puppet-metrics` is a
+Everybody loves metrics. These ones are for Puppet. So, `puppet-metrics` is a
 very simple set of tools and scripts to generate... Uhm, Puppet metrics ;-)
 
 Spoiler alert: if you don't like surprises, don't run these against your
