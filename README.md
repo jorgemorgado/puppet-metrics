@@ -20,7 +20,7 @@ yum -y install sqlite
 aptitude -y install sqlite3
 ```
 
-You also need to install the 'cloc' package. To install it from sources, check
+You also need to install the `cloc` package. To install it from sources, check
 [here](https://github.com/AlDanial/cloc) or [here](http://cloc.sourceforge.net/).
 
 And download the [D3.js](https://github.com/mbostock/d3/blob/master/d3.min.js)
@@ -31,6 +31,10 @@ library for data visualization in your browser.
 That's it! Check the `run-example.sh` script for a few examples of stats you
 can generate. If you have more ideas just send me a pull request with your
 "run script(s)".
+
+## Preview
+
+![Puppet Modules by Class LoC](https://raw.githubusercontent.com/wiki/jorgemorgado/puppet-metrics/modules_class_loc.png)
 
 ## Contributors
 
